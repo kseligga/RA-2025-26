@@ -55,7 +55,33 @@ Install:
 pip install numpy pandas matplotlib tqdm
 ```
 
-Run:
-```bash
-python Assignment2/ballanced-alloc.py
+
+
+## Assignment 3 — Cardinality Estimation
+**Files & Folders:**
+
+
+Assignment3/  
+  ├─ cardinality-estimation.py  
+  └─ results_summary.csv         # generated results  
+  
+**Description:** Implementation and experimental analysis of cardinality estimation algorithms for data streams.  
+Algorithms: HyperLogLog (HLL), Recordinality (REC), and K-Minimum Values (KMV).  
+Experiments: Tested on real datasets (Project Gutenberg novels) and synthetic Zipfian data streams.  
+Output: Generates results_summary.csv with estimation errors and plots comparing theoretical vs. empirical performance (e.g., memory impact on "Dracula" text).  
+
+**Requirements:**
+
+Python 3.8+
+-numpy
+-mmh3
+-matplotlib
+-tqdm
+
+Install:  
+```bash  
+
+pip install numpy mmh3 matplotlib tqdm
+
+python Assignment3/cardinality-estimation.py
 ```
